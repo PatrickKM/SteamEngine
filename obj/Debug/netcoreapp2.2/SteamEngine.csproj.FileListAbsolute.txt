@@ -71,3 +71,5 @@ C:\Users\Patrick\Documents\GitHub\SteamEngine\SteamEngine\obj\Debug\netcoreapp2.
 C:\Users\Patrick\Documents\GitHub\SteamEngine\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.dll
 C:\Users\Patrick\Documents\GitHub\SteamEngine\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.pdb
 C:\Users\Patrick\Documents\GitHub\SteamEngine\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.csproj.CopyComplete
+C:\Users\mkr06\OneDrive\Skrivebord\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.dll
+C:\Users\mkr06\OneDrive\Skrivebord\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.pdb

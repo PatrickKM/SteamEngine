@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SteamEngine.Controllers
+namespace SteamEngine.Controllers{
+public class GameController : Controller 
+    {
 
-public class GameController : Controller
-{
     // GET: Student
     public ActionResult Index()
     {
@@ -17,7 +17,7 @@ public class GameController : Controller
         {
             client.BaseAddress = new Uri("https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=7D47164FD693877395D535BF6049339D&steamid=76561198025683997&include_appinfo=1&include_played_free_games=1");
             //HTTP GET
-            var responseTask = client.GetAsync("student");
+            var responseTask = client.GetAsync("game");
             responseTask.Wait();
 
             var result = responseTask.Result;
@@ -39,4 +39,5 @@ public class GameController : Controller
         }
         return View(students);
     }
+ }
 }

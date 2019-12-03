@@ -1,57 +1,40 @@
-﻿
-@{
-    Layout = null;
-}
+﻿@model IEnumerable<WebAPIDemo.Models.StudentViewModel>
 
-<!DOCTYPE html>
+    @{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="~/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="~/css/basic.css">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <img src="logo.png" id="logo" alt="Logo" />
-        <h1>SteamEngine</h1>
-    </header>
-    <h2>Games that fits your preferences</h2>
-    <div id="game-container" class="grid-container">
-        <div class="grid-item">
-            <h3 class="game-title">Counter-Strike: Global Offensive</h3>
-            <img src="~/css/images/csgo.jpg" class="game-poster" alt="Game Poster" />
-            <p>
-                Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action
-                gameplay that it pioneered when it was launched 19 years ago. CS: GO features
-                new maps, characters, weapons, and game modes, and delivers updated versions
-                of the classic CS content (de_dust2, etc.).
-            </p>
-        </div>
-        <div class="grid-item">
-            <h3 class="game-title">Counter-Strike: Global Offensive</h3>
-            <img src="~/css/images/csgo.jpg" class="game-poster" alt="Game Poster" />
-            <p>
-                Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action
-                gameplay that it pioneered when it was launched 19 years ago. CS: GO features
-                new maps, characters, weapons, and game modes, and delivers updated versions
-                of the classic CS content (de_dust2, etc.).
-            </p>
-        </div>
-        <div class="grid-item">
-            <h3 class="game-title">Counter-Strike: Global Offensive</h3>
-            <img src="~/css/images/csgo.jpg" class="game-poster" alt="Game Poster" />
-            <p>
-                Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action
-                gameplay that it pioneered when it was launched 19 years ago. CS: GO features
-                new maps, characters, weapons, and game modes, and delivers updated versions
-                of the classic CS content (de_dust2, etc.).
-            </p>
-        </div>
-    </div>
-    <script src="~/js/scripts.js" type="text/javascript"></script>
-</body>
-</html>
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+
+    </table>
