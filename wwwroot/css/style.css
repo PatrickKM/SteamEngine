@@ -1,0 +1,36 @@
+﻿body {
+    background-image: url("struckaxiom.png");
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    grid-gap: 0;
+}
+
+.grid-item {
+    background-color: rgba(5, 5, 5, 0.3);
+    margin: 5px;
+    border-radius: 5px;
+    grid-gap: 0;
+}
+
+    .grid-item p {
+        color: #fff;
+        margin: 5px;
+        font-family: 'Palanquin', sans-serif;
+    }
+
+.game-title {
+    font-family: 'Palanquin', sans-serif, bold;
+    color: #fff;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.game-poster {
+    background-color: #b6ff00;
+    width: 100%;
+    grid-gap: 0;
+}
