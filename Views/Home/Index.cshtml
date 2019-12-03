@@ -1,8 +1,9 @@
-﻿@model IEnumerable<WebAPIDemo.Models.StudentViewModel>
+﻿@using SteamEngine.Models
+@model GameViewModel
 
     @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+
     }
 
     <h2>Index</h2>
@@ -13,28 +14,59 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstName)
+                @Html.DisplayNameFor(model => model.GameTitle)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastName)
+                @Html.DisplayNameFor(model => model.ImageUrl)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Developer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendsPlaying)
+            </th>
         </tr>
 
-        @foreach (var item in Model) {
+        
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
+                @Html.DisplayFor(modelItem => Model.GameTitle)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LastName)
+                @Html.DisplayFor(modelItem => Model.ImageUrl)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                @Html.DisplayFor(modelItem => Model.Description)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Developer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Publisher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ReleaseDate)
+
+            <td>
+                @Html.DisplayFor(modelItem => Model.FriendsPlaying)
+            </td>
+          
         </tr>
-    }
+    
 
     </table>

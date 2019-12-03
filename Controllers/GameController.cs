@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SteamEngine.Models;
 
-namespace SteamEngine.Controllers{
+namespace SteamEngine.Controllers
+{
 public class GameController : Controller 
     {
 
