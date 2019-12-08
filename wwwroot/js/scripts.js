@@ -14,7 +14,6 @@ fetch(fetchUrl)
     })
     .then(steamID => {
         console.log(steamID);
-        for (let i = 0; i < steamID.response.games.length; i++) {
 
             const movieSection = document.createElement('section');
             movieSection.setAttribute('class', 'column');
@@ -25,20 +24,19 @@ fetch(fetchUrl)
 
             const title = document.createElement('p');
             const playtime = document.createElement('p');
-
             const banner = document.createElement('img');
 
-            let steamName = steamID.response.games;
+            let steamName = steamID.response.games.sort(function (a, b) { return 0.5 - Math.random() });
 
-            title.textContent = steamName.sort(function (a, b) { return 0.5 - Math.random() });
-            playtime.textContent = steamID.response.games[i].playtime_forever;
-            banner.setAttribute("src", "http://media.steampowered.com/steamcommunity/public/images/apps/" + steamID.response.games[i].appid + "/" + steamID.response.games[i].img_logo_url + ".jpg");
+            title.textContent = steamName[0].name;
+            playtime.textContent = steamName[0].playtime_forever;
+            banner.setAttribute("src", "http://media.steampowered.com/steamcommunity/public/images/apps/" + steamName[0].appid + "/" + steamName[0].img_logo_url + ".jpg");
 
             movieSection.appendChild(title);
             movieSection.appendChild(playtime);
             movieSection.appendChild(banner);
             container.appendChild(movieSection);
-        }})
+        })
 
     .catch(function (err) {
         console.log('error: ' + err);
