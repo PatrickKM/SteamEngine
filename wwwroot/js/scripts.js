@@ -1,14 +1,17 @@
-﻿let url = 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=37BD3121F77FDE3ED7D589EDAED50A61&include_appinfo=1&include_played_free_games=1';
-let steamID = 'steamid=76561198025683997';
+﻿let url = 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=84B03B60EEC3A7DF3D578C07814939E5&include_appinfo=1&include_played_free_games=1';
+let steamID = 'steamid=76561197960434622';
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 // document.getElementById("valueSteamID").value = steamID;
 
-// STEAM ID: steamid=76561198025683997
+// STEAM ID: steamid=76561198025683997 (Jesper)
+// STEAM ID: steamid=76561197960434622 (STEAM)
+// STEAM ID: steamid=76561198001921578 (Patrick)
 
 let container = document.getElementById("moviesRoot");
 
 let fetchUrl = url + '&' + steamID;
-fetch(fetchUrl)
+fetch(proxyurl + fetchUrl)
     .then(response => {
         return response.json();
     })
@@ -36,7 +39,7 @@ fetch(fetchUrl)
             movieSection.appendChild(playtime);
             movieSection.appendChild(banner);
             container.appendChild(movieSection);
-        })
+    })
 
     .catch(function (err) {
         console.log('error: ' + err);
