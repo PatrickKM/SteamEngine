@@ -1,36 +1,160 @@
-﻿body {
-    background-image: url("struckaxiom.png");
+﻿/* Style for the body, every text element will inherit this font-family */
+body {
+    font-family: 'Staatliches', cursive;, sans-serif;
+    margin: 0;
 }
 
+/* Declaring grid areas for CSS GRID */
+.item1 {
+    grid-area: header;
+    border-radius: 5px 5px 0 0;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: gallery;
+}
+
+.item4 {
+    grid-area: footer;
+}
+
+/* Creating the grid container and how it should be displayed */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5px;
-    grid-gap: 0;
+    grid-template-areas:
+            'header header'
+            'main main'
+            'gallery gallery'
+            'footer footer';
+    background-color: darkred;
+    padding: 8px;
 }
 
-.grid-item {
-    background-color: rgba(5, 5, 5, 0.3);
-    margin: 5px;
-    border-radius: 5px;
-    grid-gap: 0;
-}
-
-    .grid-item p {
-        color: #fff;
-        margin: 5px;
-        font-family: 'Palanquin', sans-serif;
-    }
-
-.game-title {
-    font-family: 'Palanquin', sans-serif, bold;
-    color: #fff;
-    margin: 5px;
+/* Declaring styles for divs within the grid-container */
+.grid-container > div {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
     font-size: 30px;
 }
 
-.game-poster {
-    background-color: #b6ff00;
-    width: 100%;
-    grid-gap: 0;
+.grid-container > div.item2, div.item3 {
+    padding: 0;
+}
+
+.grid-container > div.item3 {
+    padding: 25px 0 0 0;
+}
+
+.grid-container > div.item4 {
+    text-shadow: 0 0 5px #fff, 0 0 5px darkred, 0 0 15px darkred, 0 0 15px darkred, 0 0 25px darkred, 0 0 25px darkred;
+}
+
+/* Declaring styles for text tags that will be inherited everywhere */
+h1 {
+    font-size: 44px;
+    margin: 20px 0 5px 0;
+    text-shadow: 0 0 5px #fff, 0 0 5px darkred, 0 0 35px darkred, 0 0 35px darkred, 0 0 50px darkred, 0 0 50px darkred;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 20px 0 2px 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+/* Declaring img and iframe tags to be responsive to screen width */
+img {
+    width: 50%;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    box-shadow: 0 0 5px darkred, 0 0 5px darkred, 0 0 5px darkred, 0 0 10px darkred, 0 0 20px darkred;
+}
+
+iframe {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+
+/* Custom CSS Animation on text */
+
+.shadow-pop-tr {
+    -webkit-animation: shadow-pop-tr 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+    animation: shadow-pop-tr 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(8px);
+        transform: translateX(-8px) translateY(8px);
+    }
+}
+@keyframes shadow-pop-tr {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(8px);
+        transform: translateX(-8px) translateY(8px);
+    }
+}
+
+/* Media query for screen sizes larger than 800px wide */
+@media screen and (min-width: 800px) {
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: auto;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        width: 40%;
+    }
+
+    #moviesRoot {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 33%;
+    }
 }

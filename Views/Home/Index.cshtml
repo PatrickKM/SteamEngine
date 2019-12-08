@@ -1,72 +1,37 @@
-﻿@using SteamEngine.Models
-@model GameViewModel
+﻿<!DOCTYPE html>
+<html lang="en">
 
-    @{
-    ViewBag.Title = "Index";
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Steam Engine</title>
+</head>
 
-    }
-
-    <h2>Index</h2>
-
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.GameTitle)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Developer)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Publisher)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FriendsPlaying)
-            </th>
-        </tr>
-
-        
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => Model.GameTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.ImageUrl)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.Developer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.Publisher)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => Model.ReleaseDate)
-
-            <td>
-                @Html.DisplayFor(modelItem => Model.FriendsPlaying)
-            </td>
-          
-        </tr>
-    
-
-    </table>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <header>
+                <h1>Steam Engine</h1>
+            </header>
+        </div>
+        <div class="item2">
+            <section>
+                <h2>Steam Engine<span class="shadow-pop-tr">Engine of Steam</span></h2>
+                <p>Steam Engine</p>
+            </section>
+        </div>
+        <div class="item3">
+            <section id="moviesRoot"></section>
+        </div>
+        <div class="item4">
+            <footer>
+                <p>Copyright Steam Engine</p>
+            </footer>
+        </div>
+    </div>
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

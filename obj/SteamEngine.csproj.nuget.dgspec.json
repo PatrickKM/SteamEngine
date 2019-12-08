@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj": {}
+    "C:\\Users\\Patrick\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj": {
+    "C:\\Users\\Patrick\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Patrick\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj",
         "projectName": "SteamEngine",
-        "projectPath": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj",
-        "packagesPath": "C:\\Users\\mkr06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\obj\\",
+        "projectPath": "C:\\Users\\Patrick\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj",
+        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Patrick\\Documents\\GitHub\\SteamEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mkr06\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -73,7 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
