@@ -148,3 +148,5 @@ C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngin
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.dll
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.pdb
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine.csproj.CopyComplete
+C:\Users\mkr06\OneDrive\Skrivebord\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\AddGame\Index.cshtml.g.cs
+C:\Users\mkr06\OneDrive\Skrivebord\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\AfterID\Index.cshtml.g.cs

@@ -33,7 +33,8 @@ fetch(proxyurl + fetchUrl)
 
             title.textContent = steamName[0].name;
             playtime.textContent = 'Amount of playtime on game: ' + steamName[0].playtime_forever + ' hours';
-            banner.setAttribute("src", "http://media.steampowered.com/steamcommunity/public/images/apps/" + steamName[0].appid + "/" + steamName[0].img_logo_url + ".jpg");
+        banner.setAttribute("src", "https://steamcdn-a.akamaihd.net/steam/apps/" + steamName[0].appid + "/header.jpg");
+            banner.setAttribute("class", "bannerimg");
 
             movieSection.appendChild(title);
             movieSection.appendChild(playtime);

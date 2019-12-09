@@ -1,7 +1,8 @@
 ﻿/* Style for the body, every text element will inherit this font-family */
 body {
-    font-family: 'Staatliches', cursive;, sans-serif;
+    font-family: 'Staatliches', cursive, sans-serif;
     margin: 0;
+    background-image: url("../images/diagmonds.png");
 }
 
 /* Declaring grid areas for CSS GRID */
@@ -12,6 +13,9 @@ body {
 
 .item2 {
     grid-area: main;
+    width: 30%;
+    margin: auto;
+
 }
 
 .item3 {
@@ -20,6 +24,7 @@ body {
 
 .item4 {
     grid-area: footer;
+   
 }
 
 /* Creating the grid container and how it should be displayed */
@@ -30,13 +35,11 @@ body {
             'main main'
             'gallery gallery'
             'footer footer';
-    background-color: darkred;
     padding: 8px;
 }
 
 /* Declaring styles for divs within the grid-container */
 .grid-container > div {
-    background-color: black;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -50,30 +53,33 @@ body {
     padding: 25px 0 0 0;
 }
 
-.grid-container > div.item4 {
-    text-shadow: 0 0 5px #fff, 0 0 5px darkred, 0 0 15px darkred, 0 0 15px darkred, 0 0 25px darkred, 0 0 25px darkred;
-}
 
 /* Declaring styles for text tags that will be inherited everywhere */
 h1 {
-    font-size: 44px;
+    font-size: 30px;
     margin: 20px 0 5px 0;
-    text-shadow: 0 0 5px #fff, 0 0 5px darkred, 0 0 35px darkred, 0 0 35px darkred, 0 0 50px darkred, 0 0 50px darkred;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    
 }
 
 h2 {
     font-size: 22px;
     margin: 0;
+    font-family: 'Palanquin', sans-serif;
 }
 
 h3 {
     font-size: 30px;
     margin: 20px 0 2px 0;
+    font-family: 'Palanquin', sans-serif;
 }
 
 p {
     font-size: 14px;
     margin: 0;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, p {
@@ -82,52 +88,15 @@ h1, h2, h3, p {
 
 /* Declaring img and iframe tags to be responsive to screen width */
 img {
-    width: 50%;
-    border: 2px solid darkred;
-    border-radius: 5px;
-    box-shadow: 0 0 5px darkred, 0 0 5px darkred, 0 0 5px darkred, 0 0 10px darkred, 0 0 20px darkred;
+    width: 40%;
+    
 }
 
-iframe {
-    max-width: 80%;
-    display: block;
-    margin: auto;
-}
-
-/* Custom CSS Animation on text */
-
-.shadow-pop-tr {
-    -webkit-animation: shadow-pop-tr 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
-    animation: shadow-pop-tr 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
-}
-
-@-webkit-keyframes shadow-pop-tr {
-    0% {
-        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-        -webkit-transform: translateX(0) translateY(0);
-        transform: translateX(0) translateY(0);
-    }
-    100% {
-        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-        box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-        -webkit-transform: translateX(-8px) translateY(8px);
-        transform: translateX(-8px) translateY(8px);
-    }
-}
-@keyframes shadow-pop-tr {
-    0% {
-        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-        -webkit-transform: translateX(0) translateY(0);
-        transform: translateX(0) translateY(0);
-    }
-    100% {
-        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-        box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-        -webkit-transform: translateX(-8px) translateY(8px);
-        transform: translateX(-8px) translateY(8px);
-    }
+.bannerimg {
+    border: 2px solid #67B4EC;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(103,180,236, 0.72);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(103,180,236, 0.72);
+    box-shadow: 0px 0px 15px 0px rgba(103,180,236, 0.72);
 }
 
 /* Media query for screen sizes larger than 800px wide */
@@ -138,7 +107,7 @@ iframe {
     }
 
     p {
-        font-size: 18px;
+        font-size: 20px;
         margin: auto;
         max-width: 80%;
     }
