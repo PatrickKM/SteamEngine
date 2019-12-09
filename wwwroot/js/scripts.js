@@ -8,7 +8,7 @@ const proxyurl = "https://cors-anywhere.herokuapp.com/";
 // STEAM ID: steamid=76561197960434622 (STEAM)
 // STEAM ID: steamid=76561198001921578 (Patrick)
 
-let container = document.getElementById("moviesRoot");
+let container = document.getElementById("gameRoot");
 
 let fetchUrl = url + '&' + steamID;
 fetch(proxyurl + fetchUrl)
@@ -32,7 +32,7 @@ fetch(proxyurl + fetchUrl)
             let steamName = steamID.response.games.sort(function (a, b) { return 0.5 - Math.random() });
 
             title.textContent = steamName[0].name;
-            playtime.textContent = steamName[0].playtime_forever;
+            playtime.textContent = 'Amount of playtime on game: ' + steamName[0].playtime_forever + ' hours';
             banner.setAttribute("src", "http://media.steampowered.com/steamcommunity/public/images/apps/" + steamName[0].appid + "/" + steamName[0].img_logo_url + ".jpg");
 
             movieSection.appendChild(title);
