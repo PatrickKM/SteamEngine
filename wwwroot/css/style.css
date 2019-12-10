@@ -113,6 +113,26 @@ input {
     border: 1px solid #1C2838;
 }
 
+#item-menu{
+    margin-left: 0;
+}
+
+#item-menu li {
+    list-style-type: none;
+    margin: 0 50px 0 50px;
+    display: inline;
+}
+
+.item-menu-link{
+    color: #fff;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+    background-color: #1C2838;
+    border: 1px solid #67B4EC;
+    text-decoration: none;
+    padding: 10px;
+}
+
 /* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
 

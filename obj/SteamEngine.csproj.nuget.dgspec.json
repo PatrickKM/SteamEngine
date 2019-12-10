@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj": {}
+    "C:\\Users\\Jesper\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj": {
+    "C:\\Users\\Jesper\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Jesper\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj",
         "projectName": "SteamEngine",
-        "projectPath": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\SteamEngine.csproj",
-        "packagesPath": "C:\\Users\\mkr06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkr06\\OneDrive\\Skrivebord\\SteamEngine\\obj\\",
+        "projectPath": "C:\\Users\\Jesper\\Documents\\GitHub\\SteamEngine\\SteamEngine.csproj",
+        "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jesper\\Documents\\GitHub\\SteamEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mkr06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jesper\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
