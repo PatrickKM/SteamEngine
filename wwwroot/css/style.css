@@ -1,53 +1,32 @@
 ﻿/* Style for the body, every text element will inherit this font-family */
 body {
-    font-family: 'Staatliches', cursive, sans-serif;
     margin: 0;
     background-image: url("../images/diagmonds.png");
 }
 
 /* Declaring grid areas for CSS GRID */
 .item1 {
-    grid-area: header;
     border-radius: 5px 5px 0 0;
 }
 
 .item2 {
-    grid-area: main;
     width: 30%;
-    margin: auto;
+    text-align: center;
+    display: block;
 
-}
+} 
 
-.item3 {
-    grid-area: gallery;
-}
 
-.item4 {
-    grid-area: footer;
-   
-}
-
-/* Creating the grid container and how it should be displayed */
-.grid-container {
-    display: grid;
-    grid-template-areas:
-            'header header'
-            'main main'
-            'gallery gallery'
-            'footer footer';
-    padding: 8px;
-}
-
-/* Declaring styles for divs within the grid-container */
 .grid-container > div {
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 30px;  
 }
 
-.grid-container > div.item2, div.item3 {
+.grid-container > div.item2, div.item3 {   
     padding: 0;
 }
+/* Declaring styles for divs within the grid-container */
 
 .grid-container > div.item3 {
     padding: 25px 0 0 0;
@@ -55,13 +34,14 @@ body {
 
 
 /* Declaring styles for text tags that will be inherited everywhere */
-h1 {
+    h1
+{
     font-size: 30px;
     margin: 20px 0 5px 0;
     font-family: 'Palanquin', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    
+    margin: auto;
 }
 
 h2 {
@@ -83,14 +63,24 @@ p {
 }
 
 h1, h2, h3, p {
-    color: white;
+    color: #fff;
+    margin: auto;
+}
+
+.logo {
+    margin: auto;
+    width: 30%;
+}
+
+.game-poster {
+    margin: auto;
+    display: block;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(103,180,236, 0.72);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(103,180,236, 0.72);
+    box-shadow: 0px 0px 15px 0px rgba(103,180,236, 0.72);
 }
 
 /* Declaring img and iframe tags to be responsive to screen width */
-img {
-    width: 40%;
-    
-}
 
 .bannerimg {
     border: 2px solid #67B4EC;
@@ -99,11 +89,36 @@ img {
     box-shadow: 0px 0px 15px 0px rgba(103,180,236, 0.72);
 }
 
-/* Media query for screen sizes larger than 800px wide */
+img {
+    margin: auto;
+}
+
+input {
+    font-family: 'Palanquin', sans-serif;
+    margin: 20px 0 2px 0;
+}
+
+.button {
+    color: #fff;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+    background-color: #1C2838;
+    border: 1px solid #67B4EC;
+    margin: 20px 0 20px 0;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #67B4EC;
+    border: 1px solid #1C2838;
+}
+
+/* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
 
     h3 {
         font-size: 40px;
+        margin: auto;
     }
 
     p {
@@ -116,14 +131,10 @@ img {
 @media screen and (min-width: 1000px) {
     img {
         width: 40%;
+        margin: auto;
+        text-align: center;
+        text-align: center;
     }
 
-    #moviesRoot {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .column {
-        flex: 33%;
-    }
 }
+

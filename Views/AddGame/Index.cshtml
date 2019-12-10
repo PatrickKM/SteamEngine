@@ -11,70 +11,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Add Custom Game</title>
-    <link rel="stylesheet" href="~/css/reset.css">
-    <link rel="stylesheet" href="~/css/basic.css">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:400,700|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
+
 <body>
-    <header>
-        <img src="logo.png" id="logo" alt="Logo" />
-        <h1>SteamEngine</h1>
-    </header>
 
     <div id="game-container" class="grid-container">
-        <div class="grid-item">
-            <h3 class="game-title">Counter-Strike: Global Offensive</h3>
-            <img src="https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1574134201" class="game-poster" alt="Game Poster" />
-            <p>
-                Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action
-                gameplay that it pioneered when it was launched 19 years ago. CS: GO features
-                new maps, characters, weapons, and game modes, and delivers updated versions
-                of the classic CS content (de_dust2, etc.).
-            </p>
+        <div class="item1">
+            <header>
+                <h1>Steam Engine</h1>
+            </header>
         </div>
-        <div class="grid-item">
-            <h3 class="game-title">DOTA 2</h3>
-            <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1574794050" class="game-poster" alt="Game Poster" />
-            <p>
-                Every day, millions of players worldwide enter battle as one of over a hundred
-                Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's
-                always something new to discover. With regular updates that ensure a constant
-                evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.
-            </p>
+
+        <div class="logo">
+            <img src="~/images/logo.png" alt="logo" />
         </div>
-        <div class="grid-item">
-            <h3 class="game-title">The Witcher® 3: Wild Hunt</h3>
-            <img src="https://steamcdn-a.akamaihd.net/steam/apps/292030/header.jpg?t=1550078557" class="game-poster" alt="Game Poster" />
-            <p>
-                As war rages on throughout the Northern Realms, you take on the greatest contract
-                of your life — tracking down the Child of Prophecy, a living weapon that can
-                alter the shape of the world.
-            </p>
-        </div>
-<!--Add Custom Game Section-->
-        <div class="grid-item">
+
+
+
+        <!--Add Custom Game Section-->
+        <div class="item1">
             <h3 class="game-title">@ViewData["Name"]</h3>
-            <img src="@ViewData["AppId"]" class="game-poster" alt="Game Poster" />
+            <img src="@ViewData["AppId"]" class="game-poster" />
             <p>@ViewData["Description"]</p>
         </div>
-    </div>
 
-    <form method="post" asp-controller="AddGame" asp-action="Index">
-        <div>
-            <input type="text" placeholder="Steam AppId" name="AppId" />
-            <br />
+        <div class="item3">
+            <form method="post" asp-controller="AddGame" asp-action="Index">
+                <div>
+                    <input type="text" placeholder="Steam AppId" name="AppId" />
+                    <br />
+                </div>
+                <div>
+                    <input type="text" placeholder="Name" name="Name" />
+                    <br />
+                </div>
+                <div>
+                    <input type="text" placeholder="Description" name="Description" />
+                    <br />
+                </div>
+                <div>
+                    <input class="button" type="submit" value="ADD GAME" />
+                </div>
+            </form>
+            <div class="item4">
+                <footer>
+                    <p>Copyright Steam Engine</p>
+                </footer>
+            </div>
         </div>
-        <div>
-            <input type="text" placeholder="Name" name="Name" />
-            <br />
-        </div>
-        <div>
-            <input type="text" placeholder="Description" name="Description" />
-            <br />
-        </div>
-        <div>
-            <input type="submit" value="Add game" />
-        </div>
-    </form>
+    </div>
 </body>
 </html>
