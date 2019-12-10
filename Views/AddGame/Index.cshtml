@@ -12,51 +12,43 @@
 </head>
 
 <body>
+    <section id="game-container" class="grid-container">
+        <section class="logo">
+            <a asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" alt="logo" /></a>
+        </section>
 
-    <div id="game-container" class="grid-container">
-        <div class="item1">
+        <section class="item1">
             <header>
                 <h1>Steam Engine</h1>
             </header>
-        </div>
-
-        <div class="logo">
-            <a asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" alt="logo" /></a>
-        </div>
-
-
+        </section>
 
         <!--Add Custom Game Section-->
-        <div class="item1">
+        <section class="item1">
             <h3 class="game-title">@ViewData["Name"]</h3>
             <img src="@ViewData["AppId"]" class="game-poster" />
             <p>@ViewData["Description"]</p>
-        </div>
+        </section>
 
-        <div class="item3">
+        <section class="item3">
             <form method="post" asp-controller="AddGame" asp-action="Index">
-                <div>
+                <section>
                     <input type="text" placeholder="Steam AppId" name="AppId" />
                     <br />
-                </div>
-                <div>
+                </section>
+                <section>
                     <input type="text" placeholder="Name" name="Name" />
                     <br />
-                </div>
-                <div>
+                </section>
+                <section>
                     <input type="text" placeholder="Description" name="Description" />
                     <br />
-                </div>
-                <div>
+                </section>
+                <section>
                     <input class="button" type="submit" value="Add game" />
-                </div>
+                </section>
             </form>
-            <div class="item4">
-                <footer>
-                    <p>Copyright Steam Engine</p>
-                </footer>
-            </div>
-        </div>
-    </div>
+        </section>
+    </section>
 </body>
 </html>
