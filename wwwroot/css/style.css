@@ -58,7 +58,7 @@ h3 {
 
 p {
     font-size: 14px;
-    margin: 0;
+    margin: 0 2px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -99,6 +99,7 @@ input {
     margin: 20px 0 2px 0;
 }
 
+
 .button {
     color: #fff;
     font-family: 'Palanquin', sans-serif;
@@ -106,6 +107,7 @@ input {
     background-color: #1C2838;
     border: 1px solid #67B4EC;
     margin: 20px 0 20px 0;
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -124,15 +126,22 @@ input {
     display: inline;
 }
 
-.item-menu-link{
+.item-menu-link {
     color: #fff;
     font-family: 'Palanquin', sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
     background-color: #1C2838;
     border: 1px solid #67B4EC;
     text-decoration: none;
     padding: 10px;
 }
+
+    .item-menu-link:hover {
+        color: #fff;
+        background-color: #67B4EC;
+        border: 1px solid #1C2838;
+    }
 
 /* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {

@@ -180,3 +180,4 @@ C:\Users\Jesper\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\SteamEngine
 C:\Users\Jesper\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\RandomGame\Index.cshtml.g.cs
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\AddGame\Index.cshtml.g.cs
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\RandomGame\Index.cshtml.g.cs
+C:\Users\mkr06\OneDrive\Skrivebord\SteamEngine\obj\Debug\netcoreapp2.2\Razor\Views\RandomGame\Index.cshtml.g.cs
