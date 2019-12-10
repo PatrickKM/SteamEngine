@@ -91,6 +91,7 @@ h1, h2, h3, p {
 
 img {
     margin: auto;
+    width: 100%;
 }
 
 input {
@@ -114,12 +115,12 @@ input {
 }
 
 #item-menu{
-    margin-left: 0;
+    padding-inline-start: 0;
 }
 
 #item-menu li {
     list-style-type: none;
-    margin: 0 50px 0 50px;
+    margin: 0 25px 0 25px;
     display: inline;
 }
 

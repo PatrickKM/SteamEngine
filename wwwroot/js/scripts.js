@@ -1,12 +1,13 @@
 ﻿let url = 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=84B03B60EEC3A7DF3D578C07814939E5&include_appinfo=1&include_played_free_games=1';
-let steamID = 'steamid=76561197960434622';
+let steamID = 'steamid=76561198039364734';
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 // document.getElementById("valueSteamID").value = steamID;
 
-// STEAM ID: steamid=76561198025683997 (Jesper)
-// STEAM ID: steamid=76561197960434622 (STEAM)
+// STEAM ID: steamid=76561198025683997 (Jesper) Dead / Private
+// STEAM ID: steamid=76561197960434622 (STEAM) Dead / Private
 // STEAM ID: steamid=76561198001921578 (Patrick)
+// STEAM ID: steamid=76561198039364734 (Catie)
 
 let container = document.getElementById("gameRoot");
 
@@ -32,7 +33,7 @@ fetch(proxyurl + fetchUrl)
             let steamName = steamID.response.games.sort(function (a, b) { return 0.5 - Math.random() });
 
             title.textContent = steamName[0].name;
-            playtime.textContent = 'Amount of playtime on game: ' + steamName[0].playtime_forever + ' hours';
+            playtime.textContent = 'Amount of playtime on game: ' + steamName[0].playtime_forever + ' minutes';
         banner.setAttribute("src", "https://steamcdn-a.akamaihd.net/steam/apps/" + steamName[0].appid + "/header.jpg");
             banner.setAttribute("class", "bannerimg");
 

@@ -1,9 +1,5 @@
 ﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
 
-@{
-    Layout = null;
-}
-
 <!DOCTYPE html>
 
 <html>
@@ -25,7 +21,7 @@
         </div>
 
         <div class="logo">
-            <img src="~/images/logo.png" alt="logo" />
+            <a asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" alt="logo" /></a>
         </div>
 
 
