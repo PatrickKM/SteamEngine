@@ -24,3 +24,5 @@ C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\SteamEng
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\SteamEngine.dll
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\SteamEngine.pdb
 C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\SteamEngine.csproj.CopyComplete
+C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\Razor\Views\AddGame\Index.cshtml.g.cs
+C:\Users\Patrick\Documents\GitHub\SteamEngine\obj\Release\netcoreapp2.2\Razor\Views\RandomGame\Index.cshtml.g.cs

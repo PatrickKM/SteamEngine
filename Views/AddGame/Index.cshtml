@@ -32,21 +32,13 @@
 
         <section class="item3">
             <form method="post" asp-controller="AddGame" asp-action="Index">
-                <section>
-                    <input type="text" placeholder="Steam AppId" name="AppId" />
-                    <br />
-                </section>
-                <section>
-                    <input type="text" placeholder="Name" name="Name" />
-                    <br />
-                </section>
-                <section>
-                    <input type="text" placeholder="Description" name="Description" />
-                    <br />
-                </section>
-                <section>
+                <label for="steamAppID"></label>
+                    <input type="text" name="AppId" id="steamAppID" placeholder="Steam App ID"/>
+                    <label for="steamAppName"></label>
+                    <input type="text" name="Name" id="steamAppName" placeholder="Steam App Name"/>
+                    <label for="steamAppDesc"></label>
+                    <input type="text" name="Description" id="steamAppDesc" placeholder="Steam App Description" />
                     <input class="button" type="submit" value="Add game" />
-                </section>
             </form>
         </section>
     </section>

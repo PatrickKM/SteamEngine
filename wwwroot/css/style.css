@@ -117,7 +117,7 @@ img {
 
 input {
     font-family: 'Palanquin', sans-serif;
-    margin: 20px 0 2px 0;
+    margin: 20px 0 0 0;
 }
 
 
@@ -183,6 +183,16 @@ input {
     .logo img {
         width: 40%;
     }
+
+    input {
+        width: 50%;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .bannerimg {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -193,5 +203,11 @@ input {
         text-align: center;
     }
 
+}
+
+@media screen and (min-width: 1400px) {
+    .logo img {
+        width: 20%;
+    }
 }
 
