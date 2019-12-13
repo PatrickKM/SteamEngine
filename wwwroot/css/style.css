@@ -50,6 +50,17 @@ body {
     padding: 25px 0 0 0;
 }
 
+.grid-container > section.item5 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
 section.column {
     padding: 25px 0 25px 0;
 }
@@ -119,6 +130,7 @@ input {
     font-family: 'Palanquin', sans-serif;
     margin: 20px 0 0 0;
     cursor: pointer;
+    width: 50%;
 }
 
 #reset-button{
@@ -168,17 +180,16 @@ input {
     padding: 10px;
 }
 
-    .item-menu-link:hover {
+.item-menu-link:hover {
         color: #fff;
         background-color: #67B4EC;
         border: 1px solid #1C2838;
-    }
+}
 
 #steam-id-link {
     color: #fff;
-    font-family: 'Palanquin', sans-serif;
-    font-size: 1.5em;
 }
+
 /* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
     h3 {

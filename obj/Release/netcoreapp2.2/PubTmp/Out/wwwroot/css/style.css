@@ -50,6 +50,17 @@ body {
     padding: 25px 0 0 0;
 }
 
+.grid-container > section.item5 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
 section.column {
     padding: 25px 0 25px 0;
 }
@@ -57,7 +68,7 @@ section.column {
 /* Declaring styles for text tags that will be inherited everywhere */
     h1
 {
-    font-size: 30px;
+    font-size: 1.8em;
     margin: 20px 0 5px 0;
     font-family: 'Palanquin', sans-serif;
     font-weight: 700;
@@ -118,6 +129,15 @@ img {
 input {
     font-family: 'Palanquin', sans-serif;
     margin: 20px 0 0 0;
+    cursor: pointer;
+    width: 50%;
+}
+
+#reset-button{
+    background-color: #181a1b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-color: #575757;
 }
 
 
@@ -160,15 +180,18 @@ input {
     padding: 10px;
 }
 
-    .item-menu-link:hover {
+.item-menu-link:hover {
         color: #fff;
         background-color: #67B4EC;
         border: 1px solid #1C2838;
-    }
+}
+
+#steam-id-link {
+    color: #fff;
+}
 
 /* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
-
     h3 {
         font-size: 40px;
         margin: auto;
