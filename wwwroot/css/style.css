@@ -57,7 +57,7 @@ section.column {
 /* Declaring styles for text tags that will be inherited everywhere */
     h1
 {
-    font-size: 30px;
+    font-size: 1.8em;
     margin: 20px 0 5px 0;
     font-family: 'Palanquin', sans-serif;
     font-weight: 700;
@@ -174,9 +174,13 @@ input {
         border: 1px solid #1C2838;
     }
 
+#steam-id-link {
+    color: #fff;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.5em;
+}
 /* Media query fr screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
-
     h3 {
         font-size: 40px;
         margin: auto;
