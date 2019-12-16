@@ -191,7 +191,7 @@ input {
     font-family: 'Palanquin', sans-serif;
 }
 
-/* Media query fr screen sizes larger than 800px wide */
+/* Media query for screen sizes larger than 800px wide */
 @media screen and (min-width: 800px) {
     h3 {
         font-size: 40px;
@@ -219,6 +219,7 @@ input {
     }
 }
 
+/* Media query for screen sizes larger than 1000px wide */
 @media screen and (min-width: 1000px) {
     .logo img {
         width: 35%;
@@ -229,6 +230,7 @@ input {
 
 }
 
+/* Media query for screen sizes larger than 1400 px*/
 @media screen and (min-width: 1400px) {
     .logo img {
         width: 20%;
